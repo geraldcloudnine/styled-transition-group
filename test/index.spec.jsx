@@ -1,11 +1,6 @@
-// __tests__/hidden-message.js
-// these imports are something you'd normally configure Jest to import for you
-// automatically. Learn more in the setup docs: https://testing-library.com/docs/react-testing-library/setup#cleanup
 import "@testing-library/jest-dom";
-// NOTE: jest-dom adds handy assertions to Jest and is recommended, but not required
 
 import * as React from "react";
-import { render, fireEvent, screen } from "@testing-library/react";
 import { css } from "styled-components";
 import { CSSTransition } from "react-transition-group";
 import renderer from "react-test-renderer";
@@ -18,22 +13,6 @@ const Tag = (props) => {
 };
 
 describe("transition", () => {
-  // it("wraps tag in CSSTransition", () => {
-  //   const Component = transition(Tag)``;
-  //   const tree = render(<Component timeout={100} />);
-  //   // get component CSS transition
-  //   const cssTransition = tree.getByTestId("css-transition");
-  // });
-
-  // it("passes props to child component", () => {
-  //   const Component = transition(Tag)``;
-  //   const tree = renderer.create(
-  //     <Component timeout={100} foo bar />
-  //   );
-  //   console.log(tree.root.findByType(CSSTransition));
-  //   const cssTransition = tree.root.findByType(CSSTransition);
-  //   expect(tree.toJSON()).toMatchSnapshot();
-  // });
   it("wraps tag in CSSTransition", () => {
     const Component = transition(Tag)``;
     const tree = renderer.create(<Component timeout={100} />);

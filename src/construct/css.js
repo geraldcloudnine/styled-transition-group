@@ -53,7 +53,6 @@ export default function parseCss(strings, ...interpolations) {
     strings: [],
     interpolations: [...interpolations],
   };
-  console.log("parseCss", strings, interpolations);
-  Object.entries(strings).reduce(walkChunk(next), null);
+  strings.reduce(walkChunk(next), null);
   return css(next.strings, ...next.interpolations);
 }
