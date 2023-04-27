@@ -1,9 +1,11 @@
 {
-	"presets": [
-    ["env", {
-      "modules": "commonjs"
-    }],
-		"stage-1",
-		"react"
+  "presets": [
+    // ["env", {
+    //   "modules": "commonjs"
+    // }],
+    // "stage-1",
+    // "react"
+    "@babel/preset-env",
+    "@babel/preset-react"
   ]
 }
