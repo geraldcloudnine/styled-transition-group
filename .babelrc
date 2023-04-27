@@ -1,9 +1,3 @@
 {
-	"presets": [
-    ["env", {
-      "modules": "commonjs"
-    }],
-		"stage-1",
-		"react"
-  ]
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
