@@ -1,16 +1,18 @@
 {
-  "name": "styled-transition-group",
+  "name": "@geraldcloudnine/styled-transition-group",
   "description": "Write react-transition-group animations with styled-components",
   "version": "2.0.1",
   "main": "dist/bundle.js",
   "module": "dist/bundle.es.js",
   "author": "Gabriela Seabra <gabriela.lima.se@gmail.com>",
-  "repository": "gabiseabra/styled-transition-group",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geraldcloudnine/styled-transition-group.git"
+  },
   "license": "MIT",
   "scripts": {
     "prepublishOnly": "yarn run clean && yarn run build",
     "lint": "eslint src",
-    "test:mocha": "mocha 'test/**/*.spec.{js,jsx}'",
     "test": "jest",
     "build": "rollup -c -m",
     "clean": "rimraf ./dist"
